@@ -1,12 +1,17 @@
 {
-  "name": "Quant-JP",
+  "name": "stockNote",
   "image": "mcr.microsoft.com/devcontainers/base:bookworm",
-  "workspaceFolder": "/workspaces/Quant-JP",
+  "workspaceFolder": "/workspaces/stockNote",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"
     },
-    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/anthropics/devcontainer-features/claude-code:2.0": {}
+  },
   },
   "postCreateCommand": "npm install"
 }
